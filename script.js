@@ -2,10 +2,27 @@
 const navLinks = document.querySelectorAll(".nav a");
 const sections = document.querySelectorAll("main section[id]");
 
+document.querySelectorAll('a[href^="#"]').forEach((link) => {
+    link.addEventListener("click", (event) => {
+        const hash = link.getAttribute("href");
+        if (!hash) return;
+
+        event.preventDefault();
+
+        if (hash === "#top") {
+            window.scrollTo(0, 0);
+        } else {
+            document.querySelector(hash)?.scrollIntoView({ block: "start" });
+        }
+
+        history.pushState(null, "", hash);
+    });
+});
+
 window.addEventListener("scroll", () => {
     if (window.scrollY < 80) {
         navLinks.forEach((link) => {
-            link.style.color = link.getAttribute("href") === "#" ? "var(--text)" : "";
+            link.style.color = link.getAttribute("href") === "#top" ? "var(--text)" : "";
         });
     }
 });

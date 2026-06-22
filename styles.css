@@ -16,6 +16,11 @@
     --max: 820px;
 }
 
+html,
+body {
+    scroll-behavior: auto !important;
+}
+
 body {
     font-family: "Inter", system-ui, -apple-system, sans-serif;
     background: var(--bg);
