@@ -2,6 +2,14 @@
 const navLinks = document.querySelectorAll(".nav a");
 const sections = document.querySelectorAll("main section[id]");
 
+window.addEventListener("scroll", () => {
+    if (window.scrollY < 80) {
+        navLinks.forEach((link) => {
+            link.style.color = link.getAttribute("href") === "#" ? "var(--text)" : "";
+        });
+    }
+});
+
 const observer = new IntersectionObserver(
     (entries) => {
         entries.forEach((entry) => {
