@@ -3,453 +3,251 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tianrun Xu - Software Engineer Portfolio - Computer Science Student at UC Davis with Full-Stack Development Experience">
-    <title>Tianrun Xu - Software Engineer Portfolio</title>
+    <meta name="description" content="Tianrun Xu — Software Engineer Intern at Arista Networks. UC Davis Computer Science student focused on C++ development, systems software, and full-stack engineering.">
+    <title>Tianrun Xu — Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand">
-                <a href="#home">Tianrun Xu</a>
-            </div>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+    <header class="site-header">
+        <div class="wrap header-inner">
+            <a href="#top" class="brand">Tianrun&nbsp;Xu</a>
+            <nav class="nav">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </nav>
         </div>
-    </nav>
+    </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">Hi, I'm <span class="highlight">Tianrun Xu</span></h1>
-                <h2 class="hero-subtitle">Computer Science Student</h2>
-                <p class="hero-description">
-                    Computer Science student at UC Davis with hands-on experience in software development. 
-                    Passionate about building innovative solutions and creating impactful software experiences.
+    <main id="top">
+        <!-- Intro -->
+        <section class="intro">
+            <div class="wrap">
+                <p class="eyebrow">Software Engineer Intern · UC Davis CS</p>
+                <h1>Tianrun Xu</h1>
+                <p class="lead">
+                    <span class="line">Software Engineer Intern at Arista Networks</span>
+                    <span class="line">B.S. Computer Science at UC Davis · GPA 3.76 · June 2027</span>
+                    <span class="line">C++ development · Systems software · Full-stack engineering</span>
                 </p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                    <a href="#projects" class="btn btn-secondary">View My Work</a>
-                </div>
-                <div class="social-links">
-                    <a href="https://linkedin.com/in/tianrun-xu" target="_blank" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/trxu05" target="_blank" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="mailto:marktr53@gmail.com" aria-label="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                    
+                <div class="links">
+                    <a href="mailto:marktr53@gmail.com">Email</a>
+                    <a href="https://github.com/trxu05" target="_blank" rel="noopener">GitHub</a>
+                    <a href="https://linkedin.com/in/tianrun-xu" target="_blank" rel="noopener">LinkedIn</a>
                 </div>
             </div>
-        </div>
-        <div class="scroll-indicator">
-            <a href="#about">
-                <i class="fas fa-chevron-down"></i>
-            </a>
-        </div>
-    </section>
+        </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-image">
-                    <div class="image-placeholder">
-                        <i class="fas fa-user"></i>
-                    </div>
-                </div>
-                <div class="about-text">
-                    <h3>About Me</h3>
+        <!-- About -->
+        <section id="about" class="section">
+            <div class="wrap grid">
+                <h2 class="section-label">About</h2>
+                <div class="section-body">
                     <p>
-                        I'm a Computer Science student at UC Davis with a passion for software development and 
-                        innovative software solutions. With hands-on experience from my internship at Incluvie, 
-                        I've developed expertise in React, Node.js, and modern web technologies.
+                        Fourth-year Computer Science student at UC Davis, graduating June 2027.<br>
+                        Currently working on production C++ systems software for Arista EOS.
                     </p>
                     <p>
-                        My journey in tech is driven by curiosity and a commitment to building impactful applications. 
-                        I enjoy working on projects that solve real-world problems and create meaningful user experiences. 
-                        Currently pursuing my Bachelor's degree while gaining practical industry experience.
+                        Experience in large C++ codebases, performance-sensitive systems code,<br>
+                        and full-stack product features with React, Node.js, Redis, SQL, Firebase, and Stripe.
                     </p>
-                    <div class="about-highlights">
-                        <div class="highlight-item">
-                            <i class="fas fa-graduation-cap"></i>
-                            <h4>3.80 GPA</h4>
-                            <p>UC Davis Computer Science</p>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-code"></i>
-                            <h4>6+ Projects</h4>
-                            <p></p>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-briefcase"></i>
-                            <h4>Software Engineer</h4>
-                            <p>Incluvie Internship</p>
-                        </div>
-                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <h2 class="section-title">Work Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">June 2025 - July 2025</div>
-                    <div class="timeline-content">
-                        <h3>Software Engineer Intern</h3>
-                        <h4>Incluvie | Miami, Florida</h4>
+        <!-- Experience -->
+        <section id="experience" class="section">
+            <div class="wrap grid">
+                <h2 class="section-label">Experience</h2>
+                <div class="section-body">
+                    <article class="entry">
+                        <div class="entry-head">
+                            <h3>Software Engineer Intern</h3>
+                            <span class="meta">Jun 2026 – Sep 2026</span>
+                        </div>
+                        <p class="entry-org">
+                            <span>Arista Networks</span>
+                            <span>Santa Clara, CA</span>
+                        </p>
+                        <p class="entry-note">Production C++ systems development for Arista EOS.</p>
                         <ul>
-                            <li>Developed and deployed <strong>full-stack features</strong> using <strong>React, Node.js, and Express</strong>, integrating a <strong>Redis</strong> caching layer and <strong>SQL</strong> backend to optimize dynamic content delivery and reduce latency</li>
-                            <li>Designed and implemented a <strong>secure paywall service</strong> with <strong>Firebase Auth, Firestore, and Stripe API</strong>, automating user verification and subscription renewals for uninterrupted premium access</li>
-                            <li>Built a <strong>reusable React component library</strong> (25+ UI modules) with <strong>BEM CSS and visual-regression tests</strong>, cutting QA cycles by 30% and accelerating new-feature rollout by 25%</li>
-                            <li>Collaborated in an <strong>agile team</strong> following <strong>CI/CD pipelines and SDLC</strong>, performing code reviews, version control with Git, and production debugging to ensure reliable deployments and operational excellence</li>
+                            <li>Implemented C++ support for Link-Level Flow Control (LLFC) in Arista EOS.</li>
+                            <li>Worked in performance-sensitive packet-processing and traffic-management code paths.</li>
+                            <li>Built, tested, and debugged C++ changes on Linux using Perforce, autobuild, and TACC.</li>
                         </ul>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">Sep 2023 - June 2027</div>
-                    <div class="timeline-content">
-                        <h3>Bachelor of Science in Computer Science</h3>
-                        <h4>University of California, Davis | Davis, California</h4>
+                    </article>
+
+                    <article class="entry">
+                        <div class="entry-head">
+                            <h3>Software Engineer Intern</h3>
+                            <span class="meta">Jun 2025 – Jul 2025</span>
+                        </div>
+                        <p class="entry-org">
+                            <span>Incluvie</span>
+                            <span>Miami, FL</span>
+                        </p>
+                        <p class="entry-note">Full-stack product engineering for web and subscription features.</p>
                         <ul>
-                            <li>GPA: 3.80/4.00</li>
-                            <li>Relevant Coursework: Data Structures, Algorithm Design and Analysis, Artificial Intelligence, Theory of Computation, Gateway to Data Science, Linear Algebra, Discrete Math</li>
-                            <li>Developing strong foundation in software engineering principles and problem-solving methodologies</li>
-                            <li>Actively engaged in hands-on projects and collaborative learning environments</li>
+                            <li>React, Node.js, and Express features with Redis caching and SQL storage.</li>
+                            <li>Firebase Auth, Firestore, and Stripe paywall for subscriptions and renewals.</li>
+                            <li>React component library with 25+ modules and visual-regression tests; reduced QA cycles by 30%.</li>
                         </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                    </article>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Skills & Expertise</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <span class="skill-name">Python</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 90%"></div>
-                            </div>
+                    <article class="entry">
+                        <div class="entry-head">
+                            <h3>B.S. Computer Science</h3>
+                            <span class="meta">Sep 2023 – Jun 2027</span>
                         </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Java</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 88%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">JavaScript</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 92%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Go</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 75%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">C++</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 80%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-tools"></i> Frameworks & Technologies</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <span class="skill-name">React & Node.js</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 92%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Spring Boot</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Flask</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 88%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">PostgreSQL & MongoDB</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 82%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Docker & AWS</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 75%"></div>
-                            </div>
-                        </div>
-                    </div>
+                        <p class="entry-org">
+                            <span>University of California, Davis</span>
+                            <span>GPA 3.76 / 4.00</span>
+                        </p>
+                        <p class="entry-note">
+                            Coursework: Data Structures, Algorithm Design, UNIX &amp; C++,
+                            Computer Organization, Artificial Intelligence, Machine Learning,
+                            Theory of Computation, Linear Algebra.
+                        </p>
+                    </article>
                 </div>
             </div>
-            <div class="certifications">
-                <h3>Education & Coursework</h3>
-                <div class="cert-grid">
-                    <div class="cert-item">
-                        <i class="fas fa-graduation-cap"></i>
-                        <h4>B.S. Computer Science</h4>
-                        <p>UC Davis | 2023-2027</p>
-                    </div>
-                    <div class="cert-item">
-                        <i class="fas fa-code"></i>
-                        <h4>Data Structures & Algorithms</h4>
-                        <p>Core CS Coursework</p>
-                    </div>
-                    <div class="cert-item">
-                        <i class="fas fa-brain"></i>
-                        <h4>AI & Data Science</h4>
-                        <p>Advanced Specializations</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-robot"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>AI-Powered Interview Prep</h3>
+        <!-- Projects -->
+        <section id="projects" class="section">
+            <div class="wrap grid">
+                <h2 class="section-label">Projects</h2>
+                <div class="section-body">
+                    <article class="project">
+                        <div class="entry-head">
+                            <h3>AI-Powered Interview Prep</h3>
+                            <a class="meta link" href="https://github.com/trxu05/mock-interview-chatbot" target="_blank" rel="noopener">GitHub ↗</a>
+                        </div>
                         <p>
-                            Engineered a Flask REST API integrating GPT-4 for real-time AI-driven feedback and performance analysis, 
-                            supporting concurrent sessions through efficient request handling. Deployed backend services on AWS EC2 with 
-                            environment configurations and load balancing for high availability.
+                            Flask REST API with GPT-5 interview feedback.<br>
+                            Streaming chat frontend, session handling, and AWS EC2 deployment.
                         </p>
-                        <div class="project-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">Flask</span>
-                            <span class="tag">OpenAI GPT-4</span>
-                            <span class="tag">AWS EC2</span>
+                        <p class="stack">Python · Flask · OpenAI GPT-5 · AWS · JavaScript</p>
+                    </article>
+
+                    <article class="project">
+                        <div class="entry-head">
+                            <h3>Multithreaded Task Scheduler</h3>
+                            <a class="meta link" href="https://github.com/trxu05/task-scheduler" target="_blank" rel="noopener">GitHub ↗</a>
                         </div>
-                        <div class="project-links">
-                            <a href="https://github.com/trxu05/mock-interview-chatbot" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i> Source Code
-                            </a>
+                        <p>
+                            C++ concurrency project for prioritized parallel job execution.<br>
+                            STL containers, mutexes, condition variables, RAII, and Google Test.
+                        </p>
+                        <p class="stack">C++ · STL · Threads · Google Test</p>
+                    </article>
+
+                    <article class="project">
+                        <div class="entry-head">
+                            <h3>Distributed Log Processing System</h3>
+                            <a class="meta link" href="https://github.com/trxu05/go-log-pipeline" target="_blank" rel="noopener">GitHub ↗</a>
                         </div>
-                    </div>
+                        <p>
+                            Go service for distributed log ingestion and processing.<br>
+                            Kafka queues, async workers, PostgreSQL storage, and Docker.
+                        </p>
+                        <p class="stack">Go · Gin · Kafka · PostgreSQL · Docker</p>
+                    </article>
+
+                    <article class="project">
+                        <div class="entry-head">
+                            <h3>E-Commerce Platform</h3>
+                            <a class="meta link" href="https://github.com/trxu05/E-Commerce-Platform" target="_blank" rel="noopener">GitHub ↗</a>
+                        </div>
+                        <p>
+                            Spring Boot catalog, cart, and checkout services.<br>
+                            PostgreSQL, Docker, Jenkins CI/CD, 90% test coverage, and JPQL tuning.
+                        </p>
+                        <p class="stack">Java · Spring Boot · PostgreSQL · Docker · Jenkins</p>
+                    </article>
+
+                    <article class="project">
+                        <div class="entry-head">
+                            <h3>College Course Feedback Platform</h3>
+                            <a class="meta link" href="https://github.com/trxu05/ucdclass" target="_blank" rel="noopener">GitHub ↗</a>
+                        </div>
+                        <p>
+                            Next.js course-review app for student feedback and voting.<br>
+                            PostgreSQL schema, REST APIs, and real-time upvote aggregation.
+                        </p>
+                        <p class="stack">Next.js · JavaScript · PostgreSQL · Vercel</p>
+                    </article>
+
+                    <article class="project">
+                        <div class="entry-head">
+                            <h3>Real-Time Chat Application</h3>
+                            <a class="meta link" href="https://github.com/trxu05/chat" target="_blank" rel="noopener">GitHub ↗</a>
+                        </div>
+                        <p>
+                            Spring Boot chat service for one-to-one and group messaging.<br>
+                            WebSocket, SockJS, Spring Security, JWT, and JUnit tests.
+                        </p>
+                        <p class="stack">Java · Spring Boot · WebSocket · JWT</p>
+                    </article>
                 </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-graduation-cap"></i>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="section">
+            <div class="wrap grid">
+                <h2 class="section-label">Skills</h2>
+                <div class="section-body skills">
+                    <div class="skill-row">
+                        <h4>Languages</h4>
+                        <p>C++, Java, Python, Go, JavaScript / TypeScript, SQL, HTML / CSS</p>
                     </div>
-                    <div class="project-content">
-                        <h3>College Course Feedback Platform</h3>
-                        <p>
-                            Developed a full-stack Next.js web app where students can submit and upvote course reviews with interactive 
-                            components and smooth routing transitions. Designed a relational PostgreSQL schema for reviews, users, and votes; 
-                            implemented REST APIs for CRUD operations and real-time upvote aggregation with optimized queries.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">Next.js</span>
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">PostgreSQL</span>
-                            <span class="tag">Vercel</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/trxu05/ucdclass" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i> Source Code
-                            </a>
-                        </div>
+                    <div class="skill-row">
+                        <h4>Frameworks &amp; Libraries</h4>
+                        <p>Spring Boot, Flask, Node.js, Express, React, PostgreSQL, MongoDB, Redis</p>
                     </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-shopping-cart"></i>
+                    <div class="skill-row">
+                        <h4>Tools &amp; Platforms</h4>
+                        <p>Git, Perforce, Linux, Docker, Jenkins, AWS (EC2, S3, Lambda), CI/CD</p>
                     </div>
-                    <div class="project-content">
-                        <h3>E-Commerce Platform</h3>
-                        <p>
-                            Built a high-performance Spring Boot microservice app managing catalog, cart, and checkout flows with 90% 
-                            unit-test coverage (JUnit, Mockito). Improved query performance 40% using Ehcache caching and JPQL tuning; 
-                            deployed via Docker and automated with Jenkins CI/CD for continuous delivery.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">Java</span>
-                            <span class="tag">Spring Boot</span>
-                            <span class="tag">PostgreSQL</span>
-                            <span class="tag">Docker</span>
-                            <span class="tag">Jenkins</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/trxu05/E-Commerce-Platform" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i> Source Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-cogs"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>Multithreaded Task Scheduler</h3>
-                        <p>
-                            Developed a C++ task scheduler managing prioritized job queues with STL containers, mutex locks, and condition 
-                            variables to enable efficient parallel execution. Applied RAII and exception-safe design principles to ensure 
-                            robust, maintainable code; validated reliability with Google Test unit and performance benchmarks.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">C++</span>
-                            <span class="tag">STL</span>
-                            <span class="tag">Threads</span>
-                            <span class="tag">Google Test</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/trxu05/task-scheduler" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i> Source Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-comments"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>Real-Time Chat Application</h3>
-                        <p>
-                            Built a real-time one-to-one and group chat service with Spring Boot, using WebSocket and SockJS. 
-                            Secured endpoints with Spring Security and JWT, with comprehensive JUnit integration testing.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">Java</span>
-                            <span class="tag">Spring Boot</span>
-                            <span class="tag">WebSocket</span>
-                            <span class="tag">JWT</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/trxu05/chat" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i> Source Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-stream"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>Distributed Log Processing System</h3>
-                        <p>
-                            Built a high-throughput, distributed log processing system with Go, Gin, Kafka, and PostgreSQL. 
-                            Implemented scalable log ingestion with async processing, Kafka-based message queuing with partitions, 
-                            and time-partitioned PostgreSQL storage for efficient analytical queries.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">Go</span>
-                            <span class="tag">Gin</span>
-                            <span class="tag">Kafka</span>
-                            <span class="tag">PostgreSQL</span>
-                            <span class="tag">Docker</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/trxu05/go-log-pipeline" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i> Source Code
-                            </a>
-                        </div>
+                    <div class="skill-row">
+                        <h4>Concepts</h4>
+                        <p>Data Structures, Algorithms, OOP, Operating Systems, Computer Networks, Concurrency, Distributed Systems</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Let's Connect</h3>
+        <!-- Contact -->
+        <section id="contact" class="section">
+            <div class="wrap grid">
+                <h2 class="section-label">Contact</h2>
+                <div class="section-body">
                     <p>
-                        I'm always interested in hearing about new opportunities, internships, or collaborations. 
-                        Feel free to reach out if you'd like to connect or discuss potential projects!
+                        Seeking 2027 new grad software engineer roles.             
                     </p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>Email</h4>
-                                <a href="mailto:marktr53@gmail.com">marktr53@gmail.com</a>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h4>Location</h4>
-                                <p>Davis, California</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contact-social">
-                        <a href="https://linkedin.com/in/tianrun-xu" target="_blank" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://github.com/trxu05" target="_blank" aria-label="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div>
+                    <p class="contact-links">
+                        <a href="mailto:marktr53@gmail.com">marktr53@gmail.com</a><br>
+                        <a href="https://github.com/trxu05" target="_blank" rel="noopener">github.com/trxu05</a><br>
+                        <a href="https://linkedin.com/in/tianrun-xu" target="_blank" rel="noopener">linkedin.com/in/tianrun-xu</a>
+                    </p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Tianrun Xu. All rights reserved.</p>
-            <p>Built with passion and dedication.</p>
+    <footer class="site-footer">
+        <div class="wrap">
+            <span>© 2026 Tianrun Xu</span>
+            <a href="#top">Back to top ↑</a>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
 </html>
-
