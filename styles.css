@@ -267,10 +267,6 @@ a {
 }
 
 /* ===== Contact ===== */
-#contact {
-    min-height: calc(100vh - 60px);
-}
-
 .contact-links a {
     text-decoration: none;
     border-bottom: 1px solid var(--line);
