@@ -28,6 +28,7 @@ body {
     line-height: 1.65;
     font-size: 16px;
     -webkit-font-smoothing: antialiased;
+    overflow-wrap: break-word;
 }
 
 a {
@@ -301,22 +302,39 @@ a {
 }
 
 /* ===== Responsive ===== */
-@media (max-width: 640px) {
-    .nav {
-        gap: 16px;
+@media (max-width: 760px) {
+    .wrap {
+        padding: 0 20px;
     }
 
-    .nav a {
-        font-size: 0.82rem;
+    .header-inner {
+        flex-direction: column;
+        height: auto;
+        gap: 8px;
+        padding: 12px 0;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px 18px;
     }
 
     .intro {
-        padding: 70px 0 60px;
+        padding: 64px 0 52px;
+    }
+
+    .lead {
+        font-size: 1.08rem;
     }
 
     .grid {
         grid-template-columns: 1fr;
-        gap: 16px;
+        gap: 14px;
+    }
+
+    .section {
+        padding: 48px 0;
     }
 
     .section-label {
@@ -325,6 +343,31 @@ a {
 
     .entry-head {
         flex-direction: column;
+        align-items: flex-start;
         gap: 2px;
+    }
+
+    .meta {
+        white-space: normal;
+    }
+
+    /* Let paragraph copy flow naturally instead of forcing mid-sentence breaks. */
+    .section-body p br,
+    .project p br {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    .nav {
+        gap: 6px 14px;
+    }
+
+    .nav a {
+        font-size: 0.85rem;
+    }
+
+    .links {
+        gap: 16px;
     }
 }
