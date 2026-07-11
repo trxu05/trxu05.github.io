@@ -76,9 +76,9 @@
                         </p>
                         <p class="entry-note">Production C++ systems development for Arista EOS.</p>
                         <ul>
-                            <li>Designed and implemented production C++ features in a large-scale systems codebase.</li>
-                            <li>Modified performance-sensitive C++ paths spanning multiple modules and the hardware/software boundary.</li>
-                            <li>Debugged concurrent C++ on Linux and shipped fixes through design and code review.</li>
+                            <li>Designed and implemented production C++ systems software in Arista EOS, contributing features to a large-scale codebase used across high-performance networking platforms.</li>
+                            <li>Modified performance-sensitive C++ code paths spanning multiple modules and the hardware/software boundary, improving correctness and stability under real platform constraints.</li>
+                            <li>Debugged complex concurrent failures in C++ on Linux, isolating root causes across layers and delivering targeted fixes through design review and integration testing.</li>
                         </ul>
                     </article>
 
@@ -93,9 +93,9 @@
                         </p>
                         <p class="entry-note">Full-stack product engineering for web and subscription features.</p>
                         <ul>
-                            <li>React, Node.js, and Express features with Redis caching and SQL storage.</li>
-                            <li>Stripe paywall with Firebase Auth and Firestore for signup, renewals, and payment recovery.</li>
-                            <li>Member service synced to Stripe entitlements; React component library cut QA cycles by 30%.</li>
+                            <li>Developed and deployed full-stack features using React, Node.js, and Express, integrating a Redis caching layer and SQL backend to optimize dynamic content delivery and reduce latency.</li>
+                            <li>Designed and implemented a secure paywall service with Firebase Auth, Firestore, and Stripe API, automating user verification and subscription renewals for uninterrupted premium access.</li>
+                            <li>Built a member service synced to Stripe entitlements and a reusable React component library (25+ modules), cutting QA cycles by 30% and accelerating feature rollout by 25%.</li>
                         </ul>
                     </article>
 
@@ -128,10 +128,11 @@
                             <h3>StudyBoard AI Agent</h3>
                             <a class="meta link" href="https://github.com/trxu05/fullstack-ai-agent" target="_blank" rel="noopener">GitHub ↗</a>
                         </div>
-                        <p>
-                            AI agent over a course dashboard for courses, tasks, and notes.<br>
-                            Tool calls for plan / explain / quiz / board updates; Next.js, Spring Boot, FastAPI.
-                        </p>
+                        <ul>
+                            <li>Engineered a multi-service AI agent platform with a Next.js dashboard, Spring Boot API gateway, and FastAPI agent, coordinating tool calls over REST for courses, tasks, and notes.</li>
+                            <li>Implemented agent tools for study planning, topic explanation, quiz generation, and board updates, grounding every response in the user's uploaded materials.</li>
+                            <li>Added offline extractive fallbacks and SQLite session persistence so the agent operates without an API key and retains board state across process restarts.</li>
+                        </ul>
                         <p class="stack">Next.js · React · TypeScript · Java · Spring Boot · Python · FastAPI</p>
                     </article>
 
@@ -140,10 +141,11 @@
                             <h3>Mini-Redis Cache Server</h3>
                             <a class="meta link" href="https://github.com/trxu05/cpp-http-backend" target="_blank" rel="noopener">GitHub ↗</a>
                         </div>
-                        <p>
-                            Concurrent in-memory key-value cache in C++ (mini-Redis).<br>
-                            HTTP API, TTL, LRU, thread pool, hash-sharded locks, AOF persistence, and metrics.
-                        </p>
+                        <ul>
+                            <li>Developed a concurrent in-memory key-value cache in C++ on Linux with an HTTP API, TTL expiry, and LRU eviction for Redis-like storage under memory constraints.</li>
+                            <li>Implemented a worker thread pool and hash-sharded locking across independent shards to reduce mutex contention under heavy concurrent GET and SET traffic.</li>
+                            <li>Exposed hit/miss/latency metrics and append-only (AOF) logging to make cache behavior measurable and recover state after crashes or unexpected restarts.</li>
+                        </ul>
                         <p class="stack">C++ · Linux · Sockets · Multithreading · LRU · TTL · AOF</p>
                     </article>
 
@@ -152,10 +154,10 @@
                             <h3>Multithreaded Task Scheduler</h3>
                             <a class="meta link" href="https://github.com/trxu05/task-scheduler" target="_blank" rel="noopener">GitHub ↗</a>
                         </div>
-                        <p>
-                            C++ concurrency project for prioritized parallel job execution.<br>
-                            STL containers, mutexes, condition variables, RAII, and Google Test.
-                        </p>
+                        <ul>
+                            <li>Developed a C++ task scheduler managing prioritized job queues with STL containers, mutex locks, and condition variables to enable efficient parallel execution.</li>
+                            <li>Optimized synchronization and memory usage to reduce contention and boost throughput under load; validated reliability with Google Test unit and performance benchmarks.</li>
+                        </ul>
                         <p class="stack">C++ · STL · Threads · Google Test</p>
                     </article>
 
@@ -164,10 +166,10 @@
                             <h3>Distributed Log Processing System</h3>
                             <a class="meta link" href="https://github.com/trxu05/go-log-pipeline" target="_blank" rel="noopener">GitHub ↗</a>
                         </div>
-                        <p>
-                            Go service for distributed log ingestion and processing.<br>
-                            Kafka queues, async workers, PostgreSQL storage, and Docker.
-                        </p>
+                        <ul>
+                            <li>Built a Go service for distributed log ingestion and processing with Kafka queues, async workers, and PostgreSQL storage.</li>
+                            <li>Containerized the pipeline with Docker for reproducible local and deployment environments.</li>
+                        </ul>
                         <p class="stack">Go · Gin · Kafka · PostgreSQL · Docker</p>
                     </article>
 
@@ -176,10 +178,10 @@
                             <h3>E-Commerce Platform</h3>
                             <a class="meta link" href="https://github.com/trxu05/E-Commerce-Platform" target="_blank" rel="noopener">GitHub ↗</a>
                         </div>
-                        <p>
-                            Spring Boot catalog, cart, and checkout services.<br>
-                            PostgreSQL, Docker, Jenkins CI/CD, and high unit-test coverage.
-                        </p>
+                        <ul>
+                            <li>Developed Spring Boot catalog, cart, and checkout services backed by PostgreSQL with high unit-test coverage.</li>
+                            <li>Automated builds and deployments with Docker and Jenkins CI/CD for reliable release workflows.</li>
+                        </ul>
                         <p class="stack">Java · Spring Boot · PostgreSQL · Docker · Jenkins</p>
                     </article>
                 </div>
