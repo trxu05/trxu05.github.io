@@ -1,19 +1,18 @@
 # Personal Website
 
-Personal portfolio for Tianrun Xu — a static site built with plain HTML, CSS, and a small amount of JavaScript.
+Personal portfolio for Tianrun Xu — static HTML/CSS/JS.
+Live: https://trxu05.github.io/
 
-## Structure
-
-- `index.html` — page content (intro, about, experience, projects, skills, contact)
-- `styles.css` — styling
-- `script.js` — nav active-section highlighting
+**Projects on site (resume pair first):**
+1. StudyBoard AI Agent
+2. Mini-Redis Cache Server
+3. Multithreaded Task Scheduler
+4. Distributed Log Processing System
+5. E-Commerce Platform
 
 ## Local preview
 
-Open `index.html` directly in a browser, or serve the folder:
-
 ```bash
+cd ~/code/personal\ website
 python3 -m http.server 8000
 ```
-
-Then visit `http://localhost:8000`.

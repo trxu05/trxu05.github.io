@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tianrun Xu — Software Engineer Intern at Arista Networks and UC Davis Computer Science student graduating June 2027. Seeking new-grad software engineering roles in C++ development, systems software, and full-stack engineering.">
+    <meta name="description" content="Tianrun Xu — Software Engineer Intern at Arista Networks and UC Davis Computer Science student graduating June 2027. Seeking new-grad software engineering roles in C++, systems, and full-stack.">
     <title>Tianrun Xu — Software Engineer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -76,9 +76,9 @@
                         </p>
                         <p class="entry-note">Production C++ systems development for Arista EOS.</p>
                         <ul>
-                            <li>Implemented C++ support for Link-Level Flow Control (LLFC) in Arista EOS.</li>
-                            <li>Worked in performance-sensitive packet-processing and traffic-management code paths.</li>
-                            <li>Built, tested, and debugged C++ changes on Linux using Perforce, autobuild, and TACC.</li>
+                            <li>Designed and implemented production C++ features in a large-scale systems codebase.</li>
+                            <li>Modified performance-sensitive C++ paths spanning multiple modules and the hardware/software boundary.</li>
+                            <li>Debugged concurrent C++ on Linux and shipped fixes through design and code review.</li>
                         </ul>
                     </article>
 
@@ -94,8 +94,8 @@
                         <p class="entry-note">Full-stack product engineering for web and subscription features.</p>
                         <ul>
                             <li>React, Node.js, and Express features with Redis caching and SQL storage.</li>
-                            <li>Firebase Auth, Firestore, and Stripe paywall for subscriptions and renewals.</li>
-                            <li>React component library with 25+ modules and visual-regression tests; reduced QA cycles by 30%.</li>
+                            <li>Stripe paywall with Firebase Auth and Firestore for signup, renewals, and payment recovery.</li>
+                            <li>Member service synced to Stripe entitlements; React component library cut QA cycles by 30%.</li>
                         </ul>
                     </article>
 
@@ -109,9 +109,9 @@
                             <span>GPA 3.76 / 4.00</span>
                         </p>
                         <p class="entry-note">
-                            Coursework: Data Structures, Algorithm Design, Software Development in UNIX and C++,
-                            Computer Organization, Artificial Intelligence, Machine Learning,
-                            Theory of Computation, Linear Algebra.
+                            Coursework: Software Development in UNIX and C++, Computer Organization,
+                            Data Structures, Algorithm Design, Probability and Statistics for CS,
+                            Linear Algebra, Artificial Intelligence, Machine Learning.
                         </p>
                     </article>
                 </div>
@@ -125,14 +125,26 @@
                 <div class="section-body">
                     <article class="project">
                         <div class="entry-head">
-                            <h3>AI-Powered Interview Prep</h3>
-                            <a class="meta link" href="https://github.com/trxu05/mock-interview-chatbot" target="_blank" rel="noopener">GitHub ↗</a>
+                            <h3>StudyBoard AI Agent</h3>
+                            <a class="meta link" href="https://github.com/trxu05/fullstack-ai-agent" target="_blank" rel="noopener">GitHub ↗</a>
                         </div>
                         <p>
-                            Flask REST API with GPT-5 interview feedback.<br>
-                            Streaming chat frontend, session handling, and AWS EC2 deployment.
+                            AI agent over a course dashboard for courses, tasks, and notes.<br>
+                            Tool calls for plan / explain / quiz / board updates; Next.js, Spring Boot, FastAPI.
                         </p>
-                        <p class="stack">Python · Flask · OpenAI GPT-5 · AWS · JavaScript</p>
+                        <p class="stack">Next.js · React · TypeScript · Java · Spring Boot · Python · FastAPI</p>
+                    </article>
+
+                    <article class="project">
+                        <div class="entry-head">
+                            <h3>Mini-Redis Cache Server</h3>
+                            <a class="meta link" href="https://github.com/trxu05/cpp-http-backend" target="_blank" rel="noopener">GitHub ↗</a>
+                        </div>
+                        <p>
+                            Concurrent in-memory key-value cache in C++ (mini-Redis).<br>
+                            HTTP API, TTL, LRU, thread pool, hash-sharded locks, AOF persistence, and metrics.
+                        </p>
+                        <p class="stack">C++ · Linux · Sockets · Multithreading · LRU · TTL · AOF</p>
                     </article>
 
                     <article class="project">
@@ -166,33 +178,9 @@
                         </div>
                         <p>
                             Spring Boot catalog, cart, and checkout services.<br>
-                            PostgreSQL, Docker, Jenkins CI/CD, 90% test coverage, and JPQL tuning.
+                            PostgreSQL, Docker, Jenkins CI/CD, and high unit-test coverage.
                         </p>
                         <p class="stack">Java · Spring Boot · PostgreSQL · Docker · Jenkins</p>
-                    </article>
-
-                    <article class="project">
-                        <div class="entry-head">
-                            <h3>College Course Feedback Platform</h3>
-                            <a class="meta link" href="https://github.com/trxu05/ucdclass" target="_blank" rel="noopener">GitHub ↗</a>
-                        </div>
-                        <p>
-                            Next.js course-review app for student feedback and voting.<br>
-                            PostgreSQL schema, REST APIs, and real-time upvote aggregation.
-                        </p>
-                        <p class="stack">Next.js · JavaScript · PostgreSQL · Vercel</p>
-                    </article>
-
-                    <article class="project">
-                        <div class="entry-head">
-                            <h3>Real-Time Chat Application</h3>
-                            <a class="meta link" href="https://github.com/trxu05/chat" target="_blank" rel="noopener">GitHub ↗</a>
-                        </div>
-                        <p>
-                            Spring Boot chat service for one-to-one and group messaging.<br>
-                            WebSocket, SockJS, Spring Security, JWT, and JUnit tests.
-                        </p>
-                        <p class="stack">Java · Spring Boot · WebSocket · JWT</p>
                     </article>
                 </div>
             </div>
@@ -205,19 +193,23 @@
                 <div class="section-body skills">
                     <div class="skill-row">
                         <h4>Languages</h4>
-                        <p>C++, Java, Python, Go, JavaScript / TypeScript, SQL, HTML / CSS</p>
+                        <p>Java, Python, C++, Go, JavaScript / TypeScript, SQL, HTML / CSS</p>
                     </div>
                     <div class="skill-row">
                         <h4>Frameworks &amp; Libraries</h4>
-                        <p>Spring Boot, Flask, Node.js, Express, React, PostgreSQL, MongoDB, Redis</p>
+                        <p>Spring Boot, Flask, Node.js, Express, React</p>
+                    </div>
+                    <div class="skill-row">
+                        <h4>Databases</h4>
+                        <p>PostgreSQL, MongoDB, Redis, SQLite, Firebase</p>
                     </div>
                     <div class="skill-row">
                         <h4>Tools &amp; Platforms</h4>
-                        <p>Git, Perforce, Linux, Docker, Jenkins, AWS (EC2, S3, Lambda), CI/CD</p>
+                        <p>Git, Linux, Docker, Jenkins, AWS (EC2, S3, Lambda), CI/CD, Cursor</p>
                     </div>
                     <div class="skill-row">
                         <h4>Concepts</h4>
-                        <p>Data Structures, Algorithms, OOP, Operating Systems, Computer Networks, Concurrency, Distributed Systems</p>
+                        <p>Data Structures, Algorithms, OOP, Concurrency, Distributed Systems, Computer Networks</p>
                     </div>
                 </div>
             </div>
