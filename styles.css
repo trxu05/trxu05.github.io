@@ -215,18 +215,21 @@ a {
     display: block;
 }
 
-.entry ul {
+.entry ul,
+.project ul {
     list-style: none;
 }
 
-.entry li {
+.entry li,
+.project li {
     position: relative;
     padding-left: 20px;
     margin-bottom: 8px;
     color: #333;
 }
 
-.entry li::before {
+.entry li::before,
+.project li::before {
     content: "—";
     position: absolute;
     left: 0;
@@ -238,7 +241,8 @@ a {
     font-size: 0.95rem;
 }
 
-.project p {
+.project p,
+.project ul {
     color: #333;
     margin: 12px 0;
     max-width: 600px;

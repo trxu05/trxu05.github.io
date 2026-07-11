@@ -129,9 +129,9 @@
                             <a class="meta link" href="https://github.com/trxu05/fullstack-ai-agent" target="_blank" rel="noopener">GitHub ↗</a>
                         </div>
                         <ul>
-                            <li>Engineered a multi-service AI agent platform with a Next.js dashboard, Spring Boot API gateway, and FastAPI agent, coordinating tool calls over REST for courses, tasks, and notes.</li>
-                            <li>Implemented agent tools for study planning, topic explanation, quiz generation, and board updates, grounding every response in the user's uploaded materials.</li>
-                            <li>Added offline extractive fallbacks and SQLite session persistence so the agent operates without an API key and retains board state across process restarts.</li>
+                            <li>Engineered a multi-service AI agent platform with a Next.js dashboard, Spring Boot API gateway, and FastAPI agent for managing courses, tasks, and notes.</li>
+                            <li>Implemented agent tools for study planning, topic explanation, quiz generation, and board updates, grounding every response in the user's own materials.</li>
+                            <li>Added offline mode and SQLite storage so the agent still works without an API key and keeps board data after restarts.</li>
                         </ul>
                         <p class="stack">Next.js · React · TypeScript · Java · Spring Boot · Python · FastAPI</p>
                     </article>
@@ -142,11 +142,11 @@
                             <a class="meta link" href="https://github.com/trxu05/cpp-http-backend" target="_blank" rel="noopener">GitHub ↗</a>
                         </div>
                         <ul>
-                            <li>Developed a concurrent in-memory key-value cache in C++ on Linux with an HTTP API, TTL expiry, and LRU eviction for Redis-like storage under memory constraints.</li>
-                            <li>Implemented a worker thread pool and hash-sharded locking across independent shards to reduce mutex contention under heavy concurrent GET and SET traffic.</li>
-                            <li>Exposed hit/miss/latency metrics and append-only (AOF) logging to make cache behavior measurable and recover state after crashes or unexpected restarts.</li>
+                            <li>Developed a Redis-like cache server in C++ that lets clients store and fetch data over HTTP, the same pattern many production services use for fast lookups.</li>
+                            <li>Designed the server to handle many clients at once with multithreading, keeping response times low under concurrent load.</li>
+                            <li>Kept memory under a fixed limit by removing least-used entries when full, and wrote benchmarks to measure throughput under concurrent requests.</li>
                         </ul>
-                        <p class="stack">C++ · Linux · Sockets · Multithreading · LRU · TTL · AOF</p>
+                        <p class="stack">C++ · Linux · Multithreading · HTTP</p>
                     </article>
 
                     <article class="project">
