@@ -215,43 +215,29 @@ a {
     display: block;
 }
 
-.entry ul,
-.project ul {
-    list-style: none;
+.entry-role {
+    font-size: 0.95rem;
+    margin: 4px 0 6px;
 }
 
-.entry li,
-.project li {
-    position: relative;
-    padding-left: 20px;
-    margin-bottom: 8px;
-    color: #333;
+.title-link {
+    text-decoration: none;
+    color: inherit;
 }
 
-.entry li::before,
-.project li::before {
-    content: "—";
-    position: absolute;
-    left: 0;
-    color: var(--muted);
+.title-link:hover {
+    text-decoration: underline;
 }
 
 .entry-note {
     color: var(--muted);
     font-size: 0.95rem;
-}
-
-.project p,
-.project ul {
-    color: #333;
-    margin: 12px 0;
     max-width: 600px;
 }
 
-.stack {
-    font-size: 0.85rem;
-    color: var(--muted);
-    margin-top: 0 !important;
+.project .entry-note {
+    margin-top: 8px;
+    color: #333;
 }
 
 /* ===== Skills ===== */
