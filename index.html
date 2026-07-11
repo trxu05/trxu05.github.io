@@ -74,12 +74,12 @@
                             <span>Arista Networks</span>
                             <span>Santa Clara, CA</span>
                         </p>
-                        <p class="entry-note">Production C++ software for high-performance networking systems.</p>
+                        <p class="entry-note">Production C++ on the switch networking OS.</p>
                         <ul>
-                            <li>Implemented C++ Link-Level Flow Control (LLFC) in a production networking OS, adding congestion control for high-performance Ethernet switches used in AI data-center networks.</li>
-                            <li>Integrated LLFC into existing performance-sensitive traffic-management modules in a large C++ codebase, extending on-switch buffering paths that run under congestion.</li>
-                            <li>Designed the C++ LLFC approach with senior engineers, mapping LLFC/PFC protocol behavior and ASIC/hardware limits into the final switch software design.</li>
-                            <li>Wrote unit tests for LLFC behavior and ran C++ changes through Linux automated builds and platform validation, fixing failures before merge.</li>
+                            <li>Built C++ Link-Level Flow Control (LLFC) for Ethernet switches in AI data-center networks.</li>
+                            <li>Integrated LLFC into traffic-management and on-switch buffering under congestion.</li>
+                            <li>Designed the approach with seniors from LLFC/PFC behavior and ASIC constraints.</li>
+                            <li>Covered LLFC with unit tests and Linux CI / platform validation before merge.</li>
                         </ul>
                     </article>
 
@@ -92,12 +92,12 @@
                             <span>Incluvie</span>
                             <span>Miami, FL</span>
                         </p>
-                        <p class="entry-note">Full-stack product engineering for web and subscription features.</p>
+                        <p class="entry-note">Full-stack web and subscription features.</p>
                         <ul>
-                            <li>Implemented a premium paywall with Firebase Auth, Firestore, and the Stripe API, handling checkout sessions, user verification, and subscription renewals for paid content.</li>
-                            <li>Built a member system on Firebase that persists membership records and syncs Stripe entitlements after plan upgrades, renewals, and cancellations for correct access checks.</li>
-                            <li>Shipped React pages for the paywall and membership flows, and added a Redis cache in front of the SQL backend for membership lookups and access-check queries under load.</li>
-                            <li>Added automated tests for paywall checkout and membership entitlement flows, covering upgrade, renewal, and cancellation edge cases before production releases.</li>
+                            <li>Shipped a Stripe + Firebase paywall for checkout, verification, and renewals.</li>
+                            <li>Built membership records on Firebase and kept Stripe entitlements in sync.</li>
+                            <li>Added React paywall/member pages and Redis caching for access-check queries.</li>
+                            <li>Wrote automated tests for upgrade, renewal, and cancellation edge cases.</li>
                         </ul>
                     </article>
 
@@ -131,11 +131,11 @@
                             <a class="meta link" href="https://github.com/trxu05/fullstack-ai-agent" target="_blank" rel="noopener">GitHub ↗</a>
                         </div>
                         <ul>
-                            <li>Built a multi-service AI agent platform with a Next.js dashboard, Java API gateway (Spring Boot), and Python/FastAPI agent so students can manage courses, tasks, and notes in one place.</li>
-                            <li>Implemented GPT-5 agent tools for study planning, topic explanation, quiz generation, flashcards, and board updates, grounding every response in the user's own course materials.</li>
-                            <li>Enabled the agent to update the live study board through tool calls, including adding tasks, completing work, and editing notes during the same chat session.</li>
+                            <li>Multi-service study app: Next.js UI, Spring Boot gateway, FastAPI agent for courses, tasks, and notes.</li>
+                            <li>OpenAI-backed tutor tools for planning, explain, quiz, and flashcards, grounded in the user's notes.</li>
+                            <li>Chat can add tasks, mark work done, and save notes; the live board refreshes in the same session.</li>
                         </ul>
-                        <p class="stack">Next.js · React · TypeScript · Java · Spring Boot · Python · FastAPI · GPT-5</p>
+                        <p class="stack">Next.js · React · TypeScript · Java · Spring Boot · Python · FastAPI · OpenAI</p>
                     </article>
 
                     <article class="project">
@@ -144,9 +144,9 @@
                             <a class="meta link" href="https://github.com/trxu05/cpp-http-backend" target="_blank" rel="noopener">GitHub ↗</a>
                         </div>
                         <ul>
-                            <li>Built a Redis-like in-memory cache server in C++ on Linux, exposing an HTTP API with per-key TTL expiry and LRU eviction when the cache reaches capacity.</li>
-                            <li>Served parallel clients with a worker thread pool and hash-sharded locks across cache partitions, cutting lock contention compared with one global mutex under concurrent load.</li>
-                            <li>Persisted cache data to disk so entries survive restarts, added hit/miss and latency stats for monitoring, and wrote load benchmarks to measure throughput under concurrent clients.</li>
+                            <li>C++ in-memory cache with an HTTP API, per-key TTL, and LRU eviction at capacity.</li>
+                            <li>Thread pool plus hash-sharded locks so concurrent clients share less lock contention.</li>
+                            <li>Disk persistence across restarts, hit/miss and latency stats, and a concurrent load bench.</li>
                         </ul>
                         <p class="stack">C++ · Linux · Multithreading · HTTP</p>
                     </article>
