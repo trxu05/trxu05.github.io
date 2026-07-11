@@ -50,7 +50,7 @@
                 <div class="section-body">
                     <p>
                         Fourth-year Computer Science student at UC Davis, graduating June 2027.<br>
-                        Currently working on production C++ systems software for Arista EOS.
+                        Currently working on production C++ software at Arista Networks.
                     </p>
                     <p>
                         Experience in large C++ codebases, performance-sensitive systems code,<br>
@@ -74,11 +74,12 @@
                             <span>Arista Networks</span>
                             <span>Santa Clara, CA</span>
                         </p>
-                        <p class="entry-note">C++ systems software for Arista EOS switching platforms.</p>
+                        <p class="entry-note">Production C++ software for high-performance networking systems.</p>
                         <ul>
-                            <li>Designed and implemented C++ systems software for Link-Level Flow Control (LLFC) in Arista EOS, adding congestion-control functionality for high-performance Ethernet switching platforms.</li>
-                            <li>Modified low-level packet-processing and traffic-management code paths across hardware/software boundaries, improving support for flow-control behavior in a large-scale networking codebase.</li>
-                            <li>Collaborated with senior engineers to analyze LLFC/PFC protocols, SAND traffic-manager architecture, ASIC constraints, and production-quality requirements for switch software development.</li>
+                            <li>Implemented C++ Link-Level Flow Control (LLFC) in a production networking OS, adding congestion control for high-performance Ethernet switches used in AI data-center networks.</li>
+                            <li>Integrated LLFC into existing performance-sensitive traffic-management modules in a large C++ codebase, extending on-switch buffering paths that run under congestion.</li>
+                            <li>Designed the C++ LLFC approach with senior engineers, mapping LLFC/PFC protocol behavior and ASIC/hardware limits into the final switch software design.</li>
+                            <li>Wrote unit tests for LLFC behavior and ran C++ changes through Linux automated builds and platform validation, fixing failures before merge.</li>
                         </ul>
                     </article>
 
@@ -93,9 +94,10 @@
                         </p>
                         <p class="entry-note">Full-stack product engineering for web and subscription features.</p>
                         <ul>
-                            <li>Developed and deployed full-stack features using React, Node.js, and Express, integrating a Redis caching layer and SQL backend to optimize dynamic content delivery and reduce latency.</li>
-                            <li>Designed and implemented a secure paywall service with Firebase Auth, Firestore, and Stripe API, automating user verification and subscription renewals for uninterrupted premium access.</li>
-                            <li>Built a member service synced to Stripe entitlements and a reusable React component library (25+ modules), cutting QA cycles by 30% and accelerating feature rollout by 25%.</li>
+                            <li>Implemented a premium paywall with Firebase Auth, Firestore, and the Stripe API, handling checkout sessions, user verification, and subscription renewals for paid content.</li>
+                            <li>Built a member system on Firebase that persists membership records and syncs Stripe entitlements after plan upgrades, renewals, and cancellations for correct access checks.</li>
+                            <li>Shipped React pages for the paywall and membership flows, and added a Redis cache in front of the SQL backend for membership lookups and access-check queries under load.</li>
+                            <li>Added automated tests for paywall checkout and membership entitlement flows, covering upgrade, renewal, and cancellation edge cases before production releases.</li>
                         </ul>
                     </article>
 
@@ -125,15 +127,15 @@
                 <div class="section-body">
                     <article class="project">
                         <div class="entry-head">
-                            <h3>StudyBoard AI Agent</h3>
+                            <h3>AI-Powered StudyBoard</h3>
                             <a class="meta link" href="https://github.com/trxu05/fullstack-ai-agent" target="_blank" rel="noopener">GitHub ↗</a>
                         </div>
                         <ul>
-                            <li>Engineered a multi-service AI agent platform with a Next.js dashboard, Spring Boot API gateway, and FastAPI agent for managing courses, tasks, and notes.</li>
-                            <li>Implemented agent tools for study planning, topic explanation, quiz generation, and board updates, grounding every response in the user's own materials.</li>
-                            <li>Added offline mode and SQLite storage so the agent still works without an API key and keeps board data after restarts.</li>
+                            <li>Built a multi-service AI agent platform with a Next.js dashboard, Java API gateway (Spring Boot), and Python/FastAPI agent so students can manage courses, tasks, and notes in one place.</li>
+                            <li>Implemented GPT-5 agent tools for study planning, topic explanation, quiz generation, flashcards, and board updates, grounding every response in the user's own course materials.</li>
+                            <li>Enabled the agent to update the live study board through tool calls, including adding tasks, completing work, and editing notes during the same chat session.</li>
                         </ul>
-                        <p class="stack">Next.js · React · TypeScript · Java · Spring Boot · Python · FastAPI</p>
+                        <p class="stack">Next.js · React · TypeScript · Java · Spring Boot · Python · FastAPI · GPT-5</p>
                     </article>
 
                     <article class="project">
@@ -142,9 +144,9 @@
                             <a class="meta link" href="https://github.com/trxu05/cpp-http-backend" target="_blank" rel="noopener">GitHub ↗</a>
                         </div>
                         <ul>
-                            <li>Developed a Redis-like cache server in C++ that lets clients store and fetch data over HTTP, the same pattern many production services use for fast lookups.</li>
-                            <li>Designed the server to handle many clients at once with multithreading, keeping response times low under concurrent load.</li>
-                            <li>Kept memory under a fixed limit by removing least-used entries when full, and wrote benchmarks to measure throughput under concurrent requests.</li>
+                            <li>Built a Redis-like in-memory cache server in C++ on Linux, exposing an HTTP API with per-key TTL expiry and LRU eviction when the cache reaches capacity.</li>
+                            <li>Served parallel clients with a worker thread pool and hash-sharded locks across cache partitions, cutting lock contention compared with one global mutex under concurrent load.</li>
+                            <li>Persisted cache data to disk so entries survive restarts, added hit/miss and latency stats for monitoring, and wrote load benchmarks to measure throughput under concurrent clients.</li>
                         </ul>
                         <p class="stack">C++ · Linux · Multithreading · HTTP</p>
                     </article>
@@ -195,11 +197,11 @@
                 <div class="section-body skills">
                     <div class="skill-row">
                         <h4>Languages</h4>
-                        <p>Java, Python, C++, Go, JavaScript / TypeScript, SQL, HTML / CSS</p>
+                        <p>C++, Java, Python, Go, JavaScript / TypeScript, SQL, HTML / CSS</p>
                     </div>
                     <div class="skill-row">
                         <h4>Frameworks &amp; Libraries</h4>
-                        <p>Spring Boot, Flask, Node.js, Express, React</p>
+                        <p>Spring Boot, FastAPI, Node.js, Express, React, Next.js</p>
                     </div>
                     <div class="skill-row">
                         <h4>Databases</h4>
@@ -207,11 +209,11 @@
                     </div>
                     <div class="skill-row">
                         <h4>Tools &amp; Platforms</h4>
-                        <p>Git, Linux, Docker, Jenkins, AWS (EC2, S3, Lambda), CI/CD, Cursor</p>
+                        <p>Git, Linux, Docker, Jenkins, AWS, CI/CD</p>
                     </div>
                     <div class="skill-row">
                         <h4>Concepts</h4>
-                        <p>Data Structures, Algorithms, OOP, Concurrency, Distributed Systems, Computer Networks</p>
+                        <p>Object-Oriented Programming (OOP), Concurrency, Computer Networks, Distributed Systems</p>
                     </div>
                 </div>
             </div>

@@ -1,18 +1,22 @@
 # Personal Website
 
-Personal portfolio for Tianrun Xu — static HTML/CSS/JS.
+Personal portfolio for Tianrun Xu — static HTML/CSS/JS.  
 Live: https://trxu05.github.io/
 
-**Projects on site (resume pair first):**
-1. StudyBoard AI Agent
+## On the site (matches SWE Resume V7)
+
+1. AI-Powered StudyBoard
 2. Mini-Redis Cache Server
 3. Multithreaded Task Scheduler
 4. Distributed Log Processing System
 5. E-Commerce Platform
 
-## Local preview
+Experience: Arista Networks (C++ / LLFC) · Incluvie (paywall / Firebase / Stripe)
+
+## Deploy
 
 ```bash
-cd ~/code/personal\ website
-python3 -m http.server 8000
+git add -A && git commit -m "Update site to match resume v7" && git push
 ```
+
+GitHub Pages serves from `main`.
